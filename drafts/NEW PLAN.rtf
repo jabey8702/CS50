@@ -1,0 +1,117 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2576
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0\c0;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11840\viewh15200\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 \
+//Ask the user for an input of a card number and perform a checksum to validate the card number. Return the card type or if it is invalid return `INVALID`\
+\
+Int sum = 0; //The basket\
+for(int x =0; x<10;x++)\{\
+	sum += 1; //How we add to the basket repeatedly (inside of loop)\
+\}\
+\
+\
+\cb2 Int n = 1234567;\
+N % 10^2 = 6 //how you get the current digit\
+N % 10^\cf3 3\cf0  = ? //what digit is that?\
+\
+MAIN\{\
+\
+1: ask the user for input, which is a card-number and store the value. \
+2: check the number of digits in the cardnumber and store the digits. \
+3: multiply each other digit starting with second to last digit // Checksum\
+	what are the parameters? Or arguments?\
+	what does checksum return?\
+\
+	- find the 2nd to last digit (modulo 10^2 gets last digit)\
+	- modulo 10^4, 6, 8, 10\'85. until the last even digit in terms of the power\
+	\
+	static int exponent=10;\
+	int checksum=0;\
+	for power = 1; power <= numberOfDig; power++\{\
+		\
+		int currentDigit=(Math.floor(cardNumber%(Math.pow(exponent,power)));\
+\
+		\
+				 if (power % 2 == 0)\{ // if power is even\
+\
+					int timesTwo=currentDigit*2;\
+					if timesTwo>9\{\
+						int first = timesTwo % 10; \
+						int second = timesTwo % 100;\
+						checkSum+= first + second;\
+					\}else \{\
+						checkSum+=timesTwo;\
+					\}\
+	\
+				\} else \{ // if power is NOT even\
+					checkSum+=currentDigit; \
+				\}\
+		\}\
+		if checkSum%10==0 \{\
+		\
+		\} else \{\
+			System.out.println(\'93INVALID\'94);\
+		\}\
+				\
+	\
+\
+\cb1 		\
+-for (evenPower=2; evenPower<=numberofDigits; evenPower+=2)\
+		- for each even digit, times 2 and then add them together\
+			- if digit>9, \
+			- if 16, add 1+6 \
+4: add those products\'92 digits together \'97>sum1\
+5: add the digits that are not used \'97>sum2\
+	- -for (oddPower=1; evenPower<=numberofDigits; evenPower+=2)\
+\
+6. add sum1 and sum2 and check whether their last digit is 0. \
+7. If is it 0, then it is valid, if not, then print invalid. \
+8. If valid, we check the card type\
+	- if card type is valid, print type \
+	- if card type is invalid, print invalid \
+\
+\
+\
+\
+\
+\
+\
+Public static cardType()\
+\
+1. cardNumber \
+2. noOfDigits\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+	\
+\
+\'85\
+\
+\}}

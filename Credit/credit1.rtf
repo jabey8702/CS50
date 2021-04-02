@@ -1,0 +1,295 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1671\cocoasubrtf600
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 Helvetica-Oblique;}
+{\colortbl;\red255\green255\blue255;\red251\green2\blue7;\red128\green128\blue128;\red0\green0\blue255;
+\red0\green0\blue0;\red127\green127\blue127;\red127\green127\blue127;}
+{\*\expandedcolortbl;;\cssrgb\c100000\c14913\c0;\csgray\c57415;\cssrgb\c1680\c19835\c100000;
+\cssrgb\c0\c0\c0;\cssrgb\c57046\c57047\c57046;\cssrgb\c57046\c57047\c57046;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww13940\viewh15600\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs36 \cf0 Number = 5200 0000 0000 0000\
+1)  check card length\
+	\cf2 - MC (16)\cf0 \
+		\cf3 // first two digits \'97>51~55 \
+	\cf4 	- power \cf5 \
+		-\cf4  length\cf0 \
+		- if works\'97> take out even (*2) and odd digits, and add together\
+		- checksum: if last digit = 0\
+\cf2 	- V1 (13)\cf0 \
+		\cf2 - first digit \'97>4 \cf0 \
+		- if works\'97> take out even (*2) and odd digits, and add together\
+		- checksum: if last digit = 0\
+\
+\
+\
+public static int power(int Digits, long cardNumber)\
+\{\
+	if(Digits==15)\
+	\{\
+		int firstTwo = Math.floor(cardNumber/(Math.pow(exponent,(Digits-2)));\
+		if ( firstTwo == 34 || firstTwo== 37)\
+		\{\
+			return 13;\
+		\}\
+		\
+	if(Digits==16)\
+	\{\
+		if ( firstTwo == 51 || firstTwo== 52 || firstTwo== 53 || firstTwo== 54 || \
+			firstTwo== 55))\
+		\{\
+			return 13;\
+		\}  \
+	\}\
+\
+\
+\}\
+public static void main (String args[])\
+\{   \
+	long cardNumber=cardInput();\
+	int noOfDigits=cardLength(cardNumber);\
+		\
+\cf6 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Public static int divideByTwo(int num)\{\
+	return num/2\
+\}\
+\
+Public static long convertToLong(int num)\{\
+	return (long)num\
+\}\
+\
+\
+Public static void main\{\
+	int number = 10;\
+	int newNumber=divideByTwo(number); \
+	long finalNumber = convertToLong(newNumber);\
+	return finalNumber;\
+\}\
+\cf0 \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+Private static void testingMethod(int num)\{\
+	system.out.println(\'93the variable is\'94 + num);\
+\}\
+\
+Private static long myMethod(string myString)\{\
+	return long(myString);\
+\}\
+\
+Public static void main\{\
+	int number = 4;\
+	String newStr = \'9312345\'94;\
+	long stringToNumber = myMethod(newStr);\
+	long numberToString = method2(stringToNumber);\
+	system.out.prtinln(stringToNumber);\
+	return testingMethod(4);\
+\}\
+\
+-\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+Private static int countNumbers(long number)\{\
+\'85\
+return length \
+\}\
+\
+Private static int Power(int cardLength)\
+\{\
+	int power= cardLength-2;\
+\
+\
+	return power;\
+\}\
+\
+Public static void main()\{\
+\
+	long cardNumber = 5200 0000 0000 0000;\
+	int cardLength=countNumbers(cardNumber);\
+\
+\
+\
+	\
+	\
+\
+\
+\
+\
+\
+\
+Red\
+Blue\
+Green\
+\
+//[\'93Red\'94,id], id: is 4 or 2\
+//[Green,id], id: is 0\
+\
+//Given a color return id if it is correct. If not `return invalid()`\
+// what should givernColor = [Red,5] return?\
+//what should givenCOlor= [Green,0] return?\
+//what should givenColor= [purple,1] return?\
+\
+Public static int verifyId(String[] givenColor)\{\
+	if the color is \'93Red\'94 continue\
+		if id is 4 return 4\
+		if id is 2 return 2\
+		else return invalid()\
+	if(color==\'93Red\'94)\
+	\{	\
+		if (ID==4)\
+		\{\
+			return 4;\
+		\}\
+\
+		if (ID==2)\
+		\{\
+			return 2;\
+		\}\
+		else\
+		\{\
+			return \'93INVALID\'94;\
+		\}\
+	\}\
+\
+	if(color==\'93Green\'94)\
+	\{	\
+		if (ID==0)\
+		\{\
+			return 0;\
+		\}\
+\
+		\
+		else\
+		\{\
+			return \'93INVALID\'94;\
+		\}\
+	\}\
+	else \
+	\{\
+		return \'93INVALID\'94;\
+	\}\
+\}\
+\
+Public static void main()\{\
+	String[] givenColor = colorInput(); \
+	id = verifyId(givenColor);\
+\
+	\
+\}\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+V2, AMEX\
+\
+\
+cardType\
+1) we use division formula\
+What is exponent?\
+What is power?\
+If exponent is 10, power is 2,\
+Math.floor(cardNo/10^2)==?\
+math.floor(newValue) ==?\
+Floored value == ?\
+Is floored value the same as `?` ?\
+Int exponent =10;\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f1\i \cf0 if (Math.floor(cardNumber/(Math.pow(exponent,Power)))\
+		 
+\f0\i0 to get the first two digits/digit from the cardNumber\
+`==` is a comparison \
+Int x = 1;\
+Int y = 2;\
+x == y is the same as `is x the same value as y?`\
+2) \
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+\
+2) check first two digits \
+\
+Private static void card2()\{\
+\
+\
+\}\
+\
+Private static long cardInput()\{\
+\'85.\
+Line -3: Return cardNumber;\
+Line -2: \}\
+Line -1:\
+Line 0: main()\{\
+Line 1:		long cardNumverMain=\\/ cardInput();\
+Line 2: \}\
+\
+\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\'97\
+\
+\cf7 Run main\
+1. On line 1 I see a variable called cardNumberMain\
+	create in memory - on my computer a space or room called cardNumberMain\
+2. See it is assigned, or \'91=\'91, method cardInput().\
+3. Calculate cardInput(), which asks user for input card number and saves card number\
+4. When java sees `return` and a value afterwards, so `return VALUE` or `return cardNumber`, java goes to line 2 and assigns cardInput() to VLAUE or cardNumber.\
+5.then java assigned original cardNumber to new value from cardInput().}
