@@ -123,9 +123,9 @@ class Substitution {
 
 	public static void main(String[] args) {
 
-		System.out.println("Running tests....");
+	/*	System.out.println("Running tests....");
 		testEncrypt();
-		System.out.println("Done with tests....");
+		System.out.println("Done with tests....");*/
 
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter encryption key:");

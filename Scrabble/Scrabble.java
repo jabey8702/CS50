@@ -40,9 +40,10 @@ class Scrabble {
   }
 
   public static void main(String[] args) {
-    System.out.println("Running tests...");
+    
+    /*System.out.println("Running tests...");
     tests();
-    System.out.println("Done with Test");
+    System.out.println("Done with Test");*/
     // Get input words from both players
     Scanner scan = new Scanner(System.in);
 
